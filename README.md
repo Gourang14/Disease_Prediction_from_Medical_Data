@@ -47,12 +47,12 @@ A Sequential Neural Network model with two hidden layers is built using Keras. T
 # Model Evaluation
 The models are evaluated based on several metrics, including:
 
-Accuracy
-Precision
-Recall
-F1 Score
-Confusion Matrix
-ROC-AUC Score
+1.Accuracy
+2.Precision
+3.Recall
+4.F1 Score
+5.Confusion Matrix
+6.ROC-AUC Score
 A comprehensive evaluation function evaluate_model() prints these metrics for each model.
 
 # Hyperparameter Tuning
@@ -73,8 +73,9 @@ The Receiver Operating Characteristic (ROC) curves are plotted to evaluate the t
 # Model Persistence
 The trained models and scaler are saved for future use with joblib:
 
-Model: disease_prediction_model.joblib
-Scaler: min_max_scaler.joblib
+1.Model: disease_prediction_model.joblib
+
+2. Scaler: min_max_scaler.joblib
 # Predictions
 The model is capable of making predictions for both individual patients and multiple patients at once. The function load_model_and_predict() loads the saved model and scaler to perform predictions on new patient data.
 
